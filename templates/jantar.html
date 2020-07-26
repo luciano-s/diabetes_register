@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <title>Cadastro de medições</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+
+    
+    <body>
+        <header>
+            <div class="items">
+                <ul>
+                    <li><a href="{{url_for('cafe')}}">Café</a></li>
+                    <li><a href="{{url_for('almoco')}}">Almoço</a></li>
+                    <li><a href="{{url_for('lanche')}}">Lanche</a></li>
+                    <li><a href="{{url_for('jantar')}}">Jantar</a></li>
+                    <li><a href="{{url_for('dormir')}}">Dormir</a></li>
+                    <li><a href="{{url_for('madrugada')}}">Madrugada</a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <form action="http://localhost:5000/cadastra/jantar" method="POST">
+                <div class="input">
+                    <label for="UI">Insulina</label>
+                    <input type="text" name="UI" placeholder="UI">
+                    <label for="CHO">Carboidratos</label>
+                    <input type="text" name="CHO" placeholder="CHO">
+                    <label for="glicose">Glicose</label>
+                    <input type="text" name="glicose" placeholder="glicose">
+                    <label for="alimento">Alimento</label>
+                    <input type="text" name="alimento" placeholder="alimento">     
+                </div>
+                <input type="submit" name="submit" value="Enviar">
+            </form>
+    </main> 
+    </body>
+
+
+</html>

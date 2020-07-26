@@ -1,0 +1,8 @@
+date:2020-07-25 19:30:53.505752, 
+date:2020-07-25 19:30:56.137202, UI:, CHO:, glicose:, alimento:, 
+date:2020-07-25 21:10:52.285647, UI:, CHO:, glicose:, alimento:, 
+date:2020-07-25 21:10:58.054990, UI:sdsd, CHO:sdsd, glicose:sdsd, alimento:sdsd, 
+date:2020-07-25 21:12:09.245063, UI:6, CHO:30, glicose:158, alimento:Pizza, 
+date:2020-07-25 22:05:20.944884, UI:, CHO:, glicose:, alimento:, 
+date:2020-07-25 22:06:43.152202, UI:10, glicose:123, 
+date:2020-07-25 22:12:16.042789, UI:10, glicose:123, 
