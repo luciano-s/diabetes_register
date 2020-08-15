@@ -2,20 +2,26 @@
 <html>
     <title>Cadastro de medições</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style_b.css')}}">
 
     
     <body>
         <header>
-            <div class="items">
-                <ul>
-                    <li><a href="{{url_for('cafe')}}">Café</a></li>
-                    <li><a href="{{url_for('almoco')}}">Almoço</a></li>
-                    <li><a href="{{url_for('lanche')}}">Lanche</a></li>
-                    <li><a href="{{url_for('jantar')}}">Jantar</a></li>
-                    <li><a href="{{url_for('dormir')}}">Dormir</a></li>
-                    <li><a href="{{url_for('madrugada')}}">Madrugada</a></li>
-                </ul>
+            <div class="main-header">
+                <div class="title">
+                    <h1>S-Glucose</h1>
+                </div>
+    
+                <div class="items">
+                    <ul>
+                        <li><a href="{{url_for('cafe')}}">Café</a></li>
+                        <li><a href="{{url_for('almoco')}}">Almoço</a></li>
+                        <li><a href="{{url_for('lanche')}}">Lanche</a></li>
+                        <li><a href="{{url_for('jantar')}}">Jantar</a></li>
+                        <li><a href="{{url_for('dormir')}}">Dormir</a></li>
+                        <li><a href="{{url_for('madrugada')}}">Madrugada</a></li>
+                    </ul>
+                </div>
             </div>
         </header>
         <main>

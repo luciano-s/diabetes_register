@@ -30,7 +30,9 @@ header > .main-header{
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-columns: "";
+    grid-template-columns: "50% 50%";
+    grid-template-areas: "title items"; 
+    column-gap: 20em;
 
 }
 
@@ -43,36 +45,40 @@ header > .main-header > .title{
 }
 
 header > .main-header > .title > h1{
+    grid-area: title;
     font-size: 3em;
 }
 
 header > .main-header > .items{
     
     height: 100%;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 
 }
 
 header > .main-header > .items > ul{
+    grid-area: items;
     display: flex;
     align-items: center;
     text-align: center;
     height: 100%;
+    width: 100%; 
+/*     border: 1px solid red; */
+    margin-right: 1.5em;
 }
 
 header > .main-header > .items > ul > li{
-    float: left;
     display: flex;
     list-style: none;
-    height: 90%;
-    /* width: 90%; */
-    align-items: center;
-    justify-content: center;
-
-  
+    height: 100%;
+    width: 100%;
+/*     padding: 0em 2em; */
 }
-
+header > .main-header > .items > ul > li > a{
+    width: 100%;
+    height: 100%;
+}
 header > .main-header > .items > ul > li:hover{
     background-color: gray;
 }

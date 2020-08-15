@@ -54,4 +54,4 @@ def stores_data(data):
         f.write('\n')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
