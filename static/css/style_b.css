@@ -32,7 +32,7 @@ header > .main-header{
     display: grid;
     grid-template-columns: "50% 50%";
     grid-template-areas: "title items"; 
-    column-gap: 20em;
+    column-gap: 10em;
 
 }
 
@@ -42,6 +42,10 @@ header > .main-header > .title{
     display: flex;
     justify-content: start;
     align-items: center; 
+}
+
+header > .main-header > .side-menu{
+    display: none;
 }
 
 header > .main-header > .title > h1{
@@ -152,5 +156,63 @@ main > form >  input:hover{
     main > form > .input > input{
         width: 6em;
     }
+
+}
+
+@media screen and (max-width:800px){
+    *{font-size: 1em;}
+    header > .main-header {column-gap: 10em;}
+    header > .main-header > .title > h1{font-size: 1.5em;}
+}
+
+@media screen and (max-width:700px){
+    *{font-size: 1em;}
+    header > .main-header {column-gap: 8em;}
+    header > .main-header > .title > h1{font-size: 1.2em;}
+}
+
+@media screen and (max-width:600px){
+    
+    header{
+        height: 5em;
+    }
+
+    header > .main-header{
+        display: flex;
+        /* border: 1px solid aqua; */
+        justify-content: space-between;
+    }
+    header > .main-header > .title {
+        grid-area: title;
+        /* border: 1px solid blue; */
+    }
+
+    header > .main-header > .items{display: none;}
+
+    header > .main-header > .side-menu{
+        grid-area: side-menu;
+        display: flex;
+        align-items: center;
+        /* border: 1px solid brown; */
+        height: 100%;
+    }
+    header > .main-header > .side-menu > img{
+        /* border: 1px solid red; */
+        margin-right: .9em;
+        height: 80%;
+        cursor: pointer;
+    }
+
+    
+
+    header > .main-header > .side-menu > ul{
+        list-style: none;
+        display: none;
+    }
+    header > .main-header > .side-menu > ul > li > a{
+        color: white;
+        font-style: normal;
+    }
+
 
 }
